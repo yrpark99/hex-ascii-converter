@@ -9,7 +9,7 @@ This extension convert selected ascii string to hex string, or hex string to asc
 
 ## Demo
 
-![demo](https://github.com/yrpark99/hex-ascii-converter/images/demo.gif)
+![demo](https://raw.githubusercontent.com/yrpark99/hex-ascii-converter/master/images/demo.gif)
 
 ## Known Issues
 
