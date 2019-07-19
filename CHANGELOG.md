@@ -4,6 +4,7 @@ All notable changes to the "hex-ascii-converter" extension will be documented in
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-## [Unreleased]
-
-- Initial release
+## [0.0.1] (2019-07-19)
+* Implemented ascii to/from hex string converter
+* Added icon and demo gif under images directory
+* Updated README.md
