@@ -1,5 +1,6 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
+import { getDiffieHellman } from 'crypto';
 import * as vscode from 'vscode';
 
 // this method is called when your extension is activated
@@ -84,7 +85,7 @@ function asciiToHex(ascii: string): string {
 
 // Check input string is correct hex string or not
 function isCorrectHexStr(str: string): boolean {
-	if (/^(\-|\+)?([0-9A-Fa-f]+|Infinity)$/.test(str)) {
+	if (/(([0-9A-Fa-f])([0-9A-Fa-f])([ \t]*))+/.test(str)) {
 		return true;
 	}
 	return false;
@@ -99,7 +100,14 @@ function hexToAscii(hex: string): string {
 		return '';
 	}
 	for (var i = 0; i < hex.length; i += 2) {
+		while (hex.charAt(i) == " " || hex.charAt(i) == "\t" || hex.charAt(i) == "\r" || hex.charAt(i) == "\n") {
+			ascii += hex.charAt(i);
+			i += 1;
+		}
 		var subStr = hex.substr(i, 2).trim();
+		if (subStr.length == 0) {
+			break;
+		}
 		if (subStr.length != 2) {
 			return '';
 		}
@@ -111,5 +119,5 @@ function hexToAscii(hex: string): string {
 	}
 
 	console.log('return ascii:', ascii);
-    return ascii;
+	return ascii;
 }

@@ -2,7 +2,7 @@
 	"name": "hex-ascii-converter",
 	"displayName": "Hex ascii converter",
 	"description": "VSCode hex ascii converter extension",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"publisher": "yrpark99",
 	"engines": {
 		"vscode": "^1.28.0"
@@ -38,15 +38,14 @@
 		"@types/glob": "^7.1.1",
 		"@types/mocha": "^5.2.6",
 		"@types/node": "^10.12.21",
-		"@types/vscode": "^1.36.0",
+		"@types/vscode": "^1.28.0",
 		"glob": "^7.1.4",
 		"mocha": "^6.1.4",
 		"typescript": "^3.3.1",
 		"tslint": "^5.12.1",
-		"vscode-test": "^1.0.0-next.0",
-		"@types/vscode": "^1.28.0"
+		"vscode-test": "^1.0.0-next.0"
 	},
-    "icon": "images/icon.png",
+	"icon": "images/icon.png",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/yrpark99/hex-ascii-converter.git"
