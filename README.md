@@ -17,12 +17,13 @@ Locale is not supported.
 
 ## Release Notes
 
-### 0.0.2
+### 0.0.3
+Ignored if wrong hex string is included
 
+### 0.0.2
 Added support for space, tab and new line in hex string
 
 ### 0.0.1
-
 Initial release
 
 -----------------------------------------------------------------------------------------------------------

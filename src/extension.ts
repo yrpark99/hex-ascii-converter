@@ -85,7 +85,8 @@ function asciiToHex(ascii: string): string {
 
 // Check input string is correct hex string or not
 function isCorrectHexStr(str: string): boolean {
-	if (/(([0-9A-Fa-f])([0-9A-Fa-f])([ \t]*))+/.test(str)) {
+	const regExp = /([0-9A-Fa-f]{2}[\s]*)+/;
+	if (regExp.test(str)) {
 		return true;
 	}
 	return false;
@@ -111,10 +112,11 @@ function hexToAscii(hex: string): string {
 		if (subStr.length != 2) {
 			return '';
 		}
-		var parsed = Number.parseInt(subStr, 16);
-		if (Number.isNaN(parsed)) {
+		const regExp = /[0-9A-Fa-f]{2}/;
+		if (regExp.test(subStr) == false) {
 			return '';
 		}
+		var parsed = parseInt(subStr, 16);
 		ascii += String.fromCharCode(parsed);
 	}
 

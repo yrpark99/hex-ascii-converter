@@ -2,7 +2,7 @@
 	"name": "hex-ascii-converter",
 	"displayName": "Hex ascii converter",
 	"description": "VSCode hex ascii converter extension",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"publisher": "yrpark99",
 	"engines": {
 		"vscode": "^1.28.0"

@@ -4,6 +4,9 @@ All notable changes to the "hex-ascii-converter" extension will be documented in
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.0.3] (2021-03-27)
+* Ignored if wrong hex string is included
+
 ## [0.0.2] (2021-03-26)
 * Added support for space, tab and new line in hex string
 
